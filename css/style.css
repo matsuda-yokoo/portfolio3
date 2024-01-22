@@ -1,0 +1,234 @@
+body {
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+}
+
+.main {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.read-more {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.read-more:hover {
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
+}
+#header h1 {
+  height: 50px;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+#header nav {
+  height: 30px;
+  background: black;
+}
+#header nav ul {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  height: 30px;
+}
+#header nav ul li {
+  padding: 4px 60px 4px 0;
+  color: white;
+}
+
+#pick-area {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  margin-bottom: 100px;
+}
+#pick-area .articles {
+  width: 32%;
+}
+#pick-area .articles h2 {
+  font-size: 1rem;
+}
+#pick-area .articles img {
+  max-width: 100%;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+.contents img {
+  max-width: 100%;
+}
+.contents #main-area {
+  width: 64%;
+}
+.contents #main-area .main-articles {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  gap: 10px;
+}
+.contents #main-area .main-articles h2 {
+  margin-bottom: 1rem;
+}
+.contents #main-area .main-articles span {
+  margin-left: 1rem;
+}
+.contents #main-area .main-articles p {
+  padding: 0 2rem;
+}
+.contents #side-area {
+  width: 32%;
+}
+.contents #side-area .profile {
+  margin-bottom: 2rem;
+}
+.contents #side-area .profile .profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("../img/profile.jpg");
+  background-position: 50% 30%;
+  transform: scale(0.7);
+  margin: 0 auto;
+}
+.contents #side-area .ranking .ranking-articles {
+  margin-bottom: 2rem;
+}
+.contents #side-area .archive .archive-titles {
+  border-bottom: 1px solid;
+}
+.contents #side-area .archive .archive-titles li {
+  border-top: 1px solid;
+  padding: 20px;
+}
+
+#footer {
+  background-color: rgba(245, 245, 245, 0.966);
+  margin-top: 5rem;
+}
+#footer .footer-contents {
+  max-width: 1200px;
+  padding: 4rem 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footer-contents h3 {
+  text-align: left;
+}
+#footer .footer-contents .about {
+  width: 30%;
+}
+#footer .footer-contents .about p {
+  font-size: 80%;
+  margin-bottom: 1rem;
+}
+#footer .footer-contents .about li {
+  font-size: 80%;
+  margin-bottom: 3px;
+}
+#footer .footer-contents .menu {
+  width: 30%;
+}
+#footer .footer-contents .menu ul {
+  border-bottom: 1px solid;
+  font-size: 80%;
+}
+#footer .footer-contents .menu ul li {
+  border-top: 1px solid;
+  padding: 15px;
+}
+#footer .footer-contents .twitter {
+  width: 30%;
+}
+#footer .footer-contents .twitter a {
+  font-size: 80%;
+}
+#footer .signiture {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  #header nav {
+    overflow-x: scroll;
+  }
+  #pick-area {
+    flex-direction: column;
+  }
+  #pick-area .articles {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  #pick-area .articles h2 {
+    margin: 1%;
+  }
+  #pick-area .articles img {
+    width: 100%;
+  }
+  .contents {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contents #main-area {
+    width: 100%;
+  }
+  .contents #main-area .read-more {
+    margin-top: 1rem;
+  }
+  .contents #side-area {
+    width: 100%;
+  }
+  .contents #side-area .profile {
+    margin-bottom: 3rem;
+  }
+  .contents #side-area .ranking {
+    margin-bottom: 3rem;
+  }
+  .contents #side-area .ranking img {
+    width: 100%;
+  }
+  #footer .footer-contents {
+    flex-direction: column;
+  }
+  #footer .footer-contents .about {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #footer .footer-contents .menu {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #footer .footer-contents .twitter {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
